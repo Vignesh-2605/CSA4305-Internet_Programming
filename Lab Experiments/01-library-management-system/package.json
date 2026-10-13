@@ -1,0 +1,19 @@
+{
+  "name": "01-library-management-system",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Online library catalogue, borrowing, fines and study material",
+  "author": "Vignesh S",
+  "license": "UNLICENSED",
+  "scripts": {
+    "start": "node serve.js",
+    "serve": "node serve.js"
+  },
+  "keywords": [
+    "library",
+    "catalogue",
+    "borrowing",
+    "fines",
+    "study-material"
+  ]
+}

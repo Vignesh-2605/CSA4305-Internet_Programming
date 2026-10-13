@@ -1,0 +1,19 @@
+{
+  "name": "05-flight-reservation-system",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Flight search, seat selection, payment, e-tickets and cancellation",
+  "author": "Vignesh S",
+  "license": "UNLICENSED",
+  "scripts": {
+    "start": "node serve.js",
+    "serve": "node serve.js"
+  },
+  "keywords": [
+    "flights",
+    "airline",
+    "reservation",
+    "e-ticket",
+    "travel"
+  ]
+}

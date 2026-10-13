@@ -1,0 +1,19 @@
+{
+  "name": "04-train-reservation-system",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Train reservation with class availability, PNR status and rule based refunds",
+  "author": "Vignesh S",
+  "license": "UNLICENSED",
+  "scripts": {
+    "start": "node serve.js",
+    "serve": "node serve.js"
+  },
+  "keywords": [
+    "railway",
+    "reservation",
+    "pnr",
+    "trains",
+    "tickets"
+  ]
+}

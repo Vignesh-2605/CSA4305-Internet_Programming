@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Login - Online Train Reservation System</title>
+  <link rel="icon" href="data:,">
+  <link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+  <header class="topbar">
+    <div class="wrap">
+      <a class="brand" href="../index.html"><span class="dot">RD</span>RailDesk</a>
+      <nav>
+        <a href="../index.html">Home</a>
+        <a href="login.html" class="active">Login</a>
+        <a href="register.html">Register</a>
+      </nav>
+    </div>
+  </header>
+
+  <div class="auth-shell">
+    <div class="auth-card">
+      <h1 class="center">Sign in</h1>
+      <p class="center muted">Online Train Reservation System</p>
+
+      <div class="card">
+        <div class="tabs" id="role-tabs">
+          <button type="button" data-role="user" class="active">Passenger</button>
+          <button type="button" data-role="admin">Administrator</button>
+        </div>
+
+        <form id="login-form">
+          <div class="field">
+            <label>E-mail</label>
+            <input type="email" name="email" required placeholder="you@example.com">
+          </div>
+          <div class="field">
+            <label>Password</label>
+            <input type="password" name="password" required placeholder="••••••">
+          </div>
+          <button class="btn" style="width:100%" type="submit">Login</button>
+        </form>
+
+        <p class="muted center" style="margin:.9rem 0 0">
+          <a href="#" id="forgot-link">Forgot password?</a> &middot;
+          <a href="register.html">New user? Register</a>
+        </p>
+
+        <form id="forgot-form" style="display:none;margin-top:1rem">
+          <fieldset>
+            <legend>Reset password</legend>
+            <div class="field">
+              <label>Registered e-mail</label>
+              <input type="email" name="email" required>
+            </div>
+            <div class="field">
+              <label>New password</label>
+              <input type="password" name="password" required>
+            </div>
+            <div class="form-actions">
+              <button class="btn" type="submit">Change password</button>
+              <button class="btn flat" type="button" id="forgot-cancel">Cancel</button>
+            </div>
+          </fieldset>
+        </form>
+
+        <div id="msg" class="muted center" style="margin-top:.8rem"></div>
+      </div>
+    </div>
+  </div>
+
+  <script src="../js/store.js"></script>
+  <script src="../js/auth.js"></script>
+  <script>
+    /* --- role tabs (the role picked here must match the account's role) --- */
+    let role = new URLSearchParams(location.search).get("role") || "user";
+    const tabs = document.querySelectorAll("#role-tabs button");
+    tabs.forEach(b => {
+      b.classList.toggle("active", b.dataset.role === role);
+      b.onclick = () => {
+        role = b.dataset.role;
+        tabs.forEach(x => x.classList.remove("active"));
+        b.classList.add("active");
+      };
+    });
+
+    const msg = document.getElementById("msg");
+
+    document.getElementById("login-form").onsubmit = e => {
+      e.preventDefault();
+      const f = e.target;
+      const r = Auth.login(f.email.value, f.password.value, role);
+      if (!r.ok) { msg.innerHTML = '<span style="color:var(--danger)">' + r.msg + "</span>"; return; }
+      location.href = (role === "admin" ? "admin-dashboard.html" : "user-dashboard.html");
+    };
+
+    /* --- forgot password --- */
+    const fForm = document.getElementById("forgot-form");
+    document.getElementById("forgot-link").onclick = e => { e.preventDefault(); fForm.style.display = "block"; };
+    document.getElementById("forgot-cancel").onclick = () => { fForm.style.display = "none"; };
+    fForm.onsubmit = e => {
+      e.preventDefault();
+      const r = Auth.resetPassword(fForm.email.value, fForm.password.value);
+      msg.innerHTML = '<span style="color:' + (r.ok ? "var(--ok)" : "var(--danger)") + '">' + r.msg + "</span>";
+      if (r.ok) fForm.style.display = "none";
+    };
+  </script>
+</body>
+</html>

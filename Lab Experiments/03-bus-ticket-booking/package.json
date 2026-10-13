@@ -1,0 +1,19 @@
+{
+  "name": "03-bus-ticket-booking",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Bus ticket search, seat selection, payment and cancellation",
+  "author": "Vignesh S",
+  "license": "UNLICENSED",
+  "scripts": {
+    "start": "node serve.js",
+    "serve": "node serve.js"
+  },
+  "keywords": [
+    "bus",
+    "tickets",
+    "booking",
+    "seats",
+    "travel"
+  ]
+}
