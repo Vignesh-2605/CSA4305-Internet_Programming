@@ -1,0 +1,19 @@
+{
+  "name": "15-toll-payment-system",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Toll wallet, vehicle records, e-tickets, passes and gate verification",
+  "author": "Vignesh S",
+  "license": "UNLICENSED",
+  "scripts": {
+    "start": "node serve.js",
+    "serve": "node serve.js"
+  },
+  "keywords": [
+    "toll",
+    "payment",
+    "wallet",
+    "passes",
+    "highway"
+  ]
+}

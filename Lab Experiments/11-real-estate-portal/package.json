@@ -1,0 +1,19 @@
+{
+  "name": "11-real-estate-portal",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Property search with saved searches, shortlists, viewings and a loan calculator",
+  "author": "Vignesh S",
+  "license": "UNLICENSED",
+  "scripts": {
+    "start": "node serve.js",
+    "serve": "node serve.js"
+  },
+  "keywords": [
+    "property",
+    "real-estate",
+    "search",
+    "viewings",
+    "mortgage"
+  ]
+}

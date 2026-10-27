@@ -1,0 +1,19 @@
+{
+  "name": "14-second-hand-marketplace",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Second-hand marketplace with listings, price offers, logistics and feedback",
+  "author": "Vignesh S",
+  "license": "UNLICENSED",
+  "scripts": {
+    "start": "node serve.js",
+    "serve": "node serve.js"
+  },
+  "keywords": [
+    "marketplace",
+    "second-hand",
+    "listings",
+    "offers",
+    "feedback"
+  ]
+}

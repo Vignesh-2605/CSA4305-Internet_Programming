@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Register - Home Finder Property Portal</title>
+  <link rel="icon" href="data:,">
+  <link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+  <header class="topbar">
+    <div class="wrap">
+      <a class="brand" href="../index.html"><span class="dot">HF</span>HomeFinder</a>
+      <nav>
+        <a href="../index.html">Home</a>
+        <a href="login.html">Login</a>
+        <a href="register.html" class="active">Register</a>
+      </nav>
+    </div>
+  </header>
+
+  <div class="auth-shell">
+    <div class="auth-card">
+      <h1 class="center">Create an account</h1>
+      <p class="center muted">Home Finder Property Portal</p>
+
+      <div class="card">
+        <form id="reg-form">
+          <div class="field">
+            <label>Full name *</label>
+            <input type="text" name="name" required>
+          </div>
+          <div class="field">
+            <label>E-mail *</label>
+            <input type="email" name="email" required>
+          </div>
+          <div class="field">
+            <label>Register as *</label>
+            <select name="role">
+              <option value="user">Buyer</option>
+            </select>
+          </div>
+          <div class="field">
+            <label>Phone</label>
+            <input type="text" name="phone" required>
+          </div>
+          <div class="field">
+            <label>Budget (Rs.)</label>
+            <input type="text" name="budget">
+          </div>
+          <div class="field">
+            <label>Password *</label>
+            <input type="password" name="password" required minlength="5">
+          </div>
+          <div class="field">
+            <label>Confirm password *</label>
+            <input type="password" name="confirm" required minlength="5">
+          </div>
+          <button class="btn" style="width:100%" type="submit">Register</button>
+        </form>
+        <div id="msg" class="muted center" style="margin-top:.8rem"></div>
+        <p class="muted center" style="margin:.6rem 0 0">Already registered? <a href="login.html">Sign in</a></p>
+      </div>
+    </div>
+  </div>
+
+  <script src="../js/store.js"></script>
+  <script src="../js/auth.js"></script>
+  <script>
+    const msg = document.getElementById("msg");
+    document.getElementById("reg-form").onsubmit = e => {
+      e.preventDefault();
+      const f = e.target;
+      if (f.password.value !== f.confirm.value) {
+        msg.innerHTML = '<span style="color:var(--danger)">Passwords do not match.</span>';
+        return;
+      }
+      const rec = {};
+      new FormData(f).forEach((v, k) => { if (k !== "confirm") rec[k] = String(v).trim(); });
+      const r = Auth.register(rec);
+      msg.innerHTML = '<span style="color:' + (r.ok ? "var(--ok)" : "var(--danger)") + '">' + r.msg + "</span>";
+      if (r.ok) {
+        const role = rec.role || "";
+        f.reset();
+        /* carry the chosen role across so the right login tab is selected */
+        setTimeout(() => location.href = "login.html?role=" + encodeURIComponent(role), 1200);
+      }
+    };
+  </script>
+</body>
+</html>

@@ -1,0 +1,19 @@
+{
+  "name": "13-flowers-gifts-store",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Flower and gift ordering with timed delivery, gift cards and loyalty discounts",
+  "author": "Vignesh S",
+  "license": "UNLICENSED",
+  "scripts": {
+    "start": "node serve.js",
+    "serve": "node serve.js"
+  },
+  "keywords": [
+    "flowers",
+    "gifts",
+    "delivery",
+    "ordering",
+    "online-shop"
+  ]
+}

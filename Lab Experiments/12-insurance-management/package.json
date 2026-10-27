@@ -1,0 +1,19 @@
+{
+  "name": "12-insurance-management",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Insurance comparison, policy management, premium payment and claims",
+  "author": "Vignesh S",
+  "license": "UNLICENSED",
+  "scripts": {
+    "start": "node serve.js",
+    "serve": "node serve.js"
+  },
+  "keywords": [
+    "insurance",
+    "policies",
+    "claims",
+    "premium",
+    "agents"
+  ]
+}
