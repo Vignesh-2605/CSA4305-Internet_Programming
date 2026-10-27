@@ -1,0 +1,19 @@
+{
+  "name": "06-cake-ordering",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Cake ordering with weight, message and delivery slot, plus order tracking",
+  "author": "Vignesh S",
+  "license": "UNLICENSED",
+  "scripts": {
+    "start": "node serve.js",
+    "serve": "node serve.js"
+  },
+  "keywords": [
+    "cakes",
+    "bakery",
+    "ordering",
+    "delivery",
+    "online-shop"
+  ]
+}

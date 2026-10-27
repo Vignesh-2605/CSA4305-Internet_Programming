@@ -1,0 +1,19 @@
+{
+  "name": "08-hospital-appointment-booking",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Doctor search, slot booking with tokens, check-in forms and patient history",
+  "author": "Vignesh S",
+  "license": "UNLICENSED",
+  "scripts": {
+    "start": "node serve.js",
+    "serve": "node serve.js"
+  },
+  "keywords": [
+    "hospital",
+    "appointments",
+    "doctors",
+    "healthcare",
+    "booking"
+  ]
+}

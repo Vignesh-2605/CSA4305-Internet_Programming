@@ -1,0 +1,19 @@
+{
+  "name": "10-fashion-online-store",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Fashion shopping with size and colour choice, size guide, sales and returns",
+  "author": "Vignesh S",
+  "license": "UNLICENSED",
+  "scripts": {
+    "start": "node serve.js",
+    "serve": "node serve.js"
+  },
+  "keywords": [
+    "fashion",
+    "clothing",
+    "shopping",
+    "e-commerce",
+    "returns"
+  ]
+}

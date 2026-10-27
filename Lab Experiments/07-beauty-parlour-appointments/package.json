@@ -1,0 +1,19 @@
+{
+  "name": "07-beauty-parlour-appointments",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Salon appointment booking with a live stylist diary, deposits and reminders",
+  "author": "Vignesh S",
+  "license": "UNLICENSED",
+  "scripts": {
+    "start": "node serve.js",
+    "serve": "node serve.js"
+  },
+  "keywords": [
+    "salon",
+    "appointments",
+    "booking",
+    "beauty",
+    "scheduling"
+  ]
+}

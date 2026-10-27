@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>My health account - Hospital Appointment Booking</title>
+  <link rel="icon" href="data:,">
+  <link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+  <header class="topbar">
+    <div class="wrap">
+      <a class="brand" href="../index.html"><span class="dot">MC</span>MedCare</a>
+      <nav>
+        <a href="../index.html">Home</a>
+      </nav>
+    </div>
+  </header>
+
+  <div class="wrap dash">
+    <aside class="side no-print">
+      <div class="who" id="who"></div>
+      <nav id="dash-nav"></nav>
+      <hr style="border:0;border-top:1px solid var(--border);margin:.6rem 0">
+      <button class="side-link" id="reset-data">Reset data</button>
+      <button class="side-link" id="logout" style="color:var(--danger)">Logout</button>
+    </aside>
+
+    <main id="dash-view"></main>
+  </div>
+
+  <script src="../js/store.js"></script>
+  <script src="../js/auth.js"></script>
+  <script src="../js/dash.js"></script>
+  <script src="../js/user.js"></script>
+</body>
+</html>

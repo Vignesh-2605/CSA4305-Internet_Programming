@@ -1,0 +1,19 @@
+{
+  "name": "09-electronics-online-store",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Online electronics shopping with cart, wishlist, checkout and order tracking",
+  "author": "Vignesh S",
+  "license": "UNLICENSED",
+  "scripts": {
+    "start": "node serve.js",
+    "serve": "node serve.js"
+  },
+  "keywords": [
+    "electronics",
+    "shopping",
+    "cart",
+    "e-commerce",
+    "orders"
+  ]
+}
