@@ -1,0 +1,19 @@
+{
+  "name": "18-agri-marketplace",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Direct farm marketplace with wallet payment, OTP confirmation and shipping",
+  "author": "Vignesh S",
+  "license": "UNLICENSED",
+  "scripts": {
+    "start": "node serve.js",
+    "serve": "node serve.js"
+  },
+  "keywords": [
+    "agriculture",
+    "marketplace",
+    "farmers",
+    "wallet",
+    "orders"
+  ]
+}

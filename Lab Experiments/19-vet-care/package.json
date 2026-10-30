@@ -1,0 +1,19 @@
+{
+  "name": "19-vet-care",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Remote veterinary cases with media, subscriptions, cure library and district analysis",
+  "author": "Vignesh S",
+  "license": "UNLICENSED",
+  "scripts": {
+    "start": "node serve.js",
+    "serve": "node serve.js"
+  },
+  "keywords": [
+    "veterinary",
+    "livestock",
+    "telemedicine",
+    "farmers",
+    "animal-health"
+  ]
+}

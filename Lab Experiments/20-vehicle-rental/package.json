@@ -1,0 +1,19 @@
+{
+  "name": "20-vehicle-rental",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Self-drive rental with date-based availability, deposits and late fees",
+  "author": "Vignesh S",
+  "license": "UNLICENSED",
+  "scripts": {
+    "start": "node serve.js",
+    "serve": "node serve.js"
+  },
+  "keywords": [
+    "rental",
+    "vehicles",
+    "self-drive",
+    "booking",
+    "fleet"
+  ]
+}

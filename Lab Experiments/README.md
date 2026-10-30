@@ -1,6 +1,6 @@
 # Websites
 
-Fifteen independent websites, each in its own folder. Every one is a complete site written
+Twenty independent websites, each in its own folder. Every one is a complete site written
 in plain HTML, CSS and JavaScript - no framework, no database server, no build step.
 
 | Folder | Site | What it is | Address |
@@ -20,6 +20,11 @@ in plain HTML, CSS and JavaScript - no framework, no database server, no build s
 | `13-flowers-gifts-store` | BlossomGifts | Gifts with timed delivery, gift cards, loyalty discounts | <http://localhost:8013/> |
 | `14-second-hand-marketplace` | ReNewMarket | Member listings, price offers, logistics, feedback | <http://localhost:8014/> |
 | `15-toll-payment-system` | EasyToll | Toll wallet, e-tickets, passes, gate verification | <http://localhost:8015/> |
+| `16-complaint-management` | ComplainEase | Civic complaints, ward map, officer assignment, proof of work | <http://localhost:8016/> |
+| `17-online-voting` | VoteOnline | Electoral roll, ballots, one-time codes, sealed counts | <http://localhost:8017/> |
+| `18-agri-marketplace` | AgriMart | Farmers selling direct, wallet payments, shipping status | <http://localhost:8018/> |
+| `19-vet-care` | VetCure | Remote veterinary advice, subscriptions, cure library | <http://localhost:8019/> |
+| `20-vehicle-rental` | RentRide | Self-drive hire, date availability, deposits, late fees | <http://localhost:8020/> |
 
 ---
 
@@ -45,7 +50,7 @@ every site also works by double-clicking its `index.html`.
 
 ## Accounts
 
-Every site seeds a staff account and a customer account; two of them seed a third role as
+Every site seeds a staff account and a customer account; four of them seed a third role as
 well. Passwords follow one pattern: staff `admin123`, customer `user123`, and the third
 role has its own.
 
@@ -66,6 +71,11 @@ role has its own.
 | 13 | shop@blossomgifts.in | vignesh.s@gmail.com | - |
 | 14 | admin@renewmarket.in | vignesh.s@gmail.com | - |
 | 15 | admin@easytoll.in | vignesh.s@gmail.com | **toll gate** paranur@easytoll.in / `gate123` |
+| 16 | admin@complainease.in | vignesh.s@gmail.com | **officer** ravi@complainease.in / `officer123` |
+| 17 | admin@voteonline.in | vignesh.s@gmail.com | - |
+| 18 | admin@agrimart.in | vignesh.s@gmail.com | **farmer** murugan@agrimart.in / `farmer123` |
+| 19 | arul@vetcure.in *(the vet)* | vignesh.s@gmail.com | - |
+| 20 | desk@rentride.in | vignesh.s@gmail.com | - |
 
 New accounts can be registered from any site. The login page carries a tab for each role
 and a "forgot password" panel that really does change the password.
@@ -174,7 +184,10 @@ Opening a listing's details records a visit, which is what the agency's visitor 
 **Policyholder:** compare plans, my policies, claims, alerts, my details.
 
 An agent can register but sees only a waiting notice - no modules at all - until head office
-approves the login. Policies run Active, then Due for renewal inside thirty days of expiry,
+approves the login. A second agent, `nithya@insureeasy.in` / `agent123`, is seeded in that
+unapproved state on purpose: sign in as her to see the notice, approve her from head office,
+then sign in again and the console is there. Policies run Active, then Due for renewal
+inside thirty days of expiry,
 then Lapsed; paying a renewal premium moves the cover date on by a year. A claim for more
 than the sum assured is refused, as is one against a policy that is not in force. Agents earn
 10% of the premium on everything they write.

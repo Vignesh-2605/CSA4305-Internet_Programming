@@ -1,0 +1,19 @@
+{
+  "name": "17-online-voting",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Electoral roll, ward based ballots, one time code confirmation and published counts",
+  "author": "Vignesh S",
+  "license": "UNLICENSED",
+  "scripts": {
+    "start": "node serve.js",
+    "serve": "node serve.js"
+  },
+  "keywords": [
+    "voting",
+    "election",
+    "ballot",
+    "electoral-roll",
+    "otp"
+  ]
+}

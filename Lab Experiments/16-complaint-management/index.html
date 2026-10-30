@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>ComplainEase - Register a civic complaint and follow it to the end</title>
+  <link rel="icon" href="data:,">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <header class="topbar">
+    <div class="wrap">
+      <a class="brand" href="index.html"><span class="dot">CE</span>ComplainEase</a>
+      <nav>
+        <a href="#departments">Departments</a>
+        <a href="#how">How it works</a>
+        <a href="#notices">Notices</a>
+        <a href="#contact">Contact</a>
+        <a href="pages/login.html">Sign in</a>
+        <a class="btn sm" style="color:#fff" href="pages/register.html">Register</a>
+      </nav>
+    </div>
+  </header>
+
+  <section class="hero">
+    <div class="wrap">
+      <span class="pill">Corporation grievance cell</span>
+      <h1>Report it once, then watch it move</h1>
+      <p>Mark the spot on the ward map, describe the problem and send it. The complaint goes to the officer who handles that department, and every step is recorded against a reference number you can check at any time.</p>
+      <div class="cta">
+        <a class="btn light" href="pages/register.html">Register a complaint</a>
+        <a class="btn ghost" style="color:#fff;border-color:rgba(255,255,255,.5)" href="#departments">What we handle</a>
+      </div>
+    </div>
+  </section>
+
+  <section class="section alt" id="departments">
+    <div class="wrap">
+      <h2>Departments and how long they should take</h2>
+      <p class="lead">Each department publishes a target. A complaint past its target is flagged in red on the officer's list and on the cell's dashboard.</p>
+      <div class="grid c3" id="preview-grid"></div>
+      <div class="grid c4" id="stat-row" style="margin-top:1.6rem"></div>
+    </div>
+  </section>
+
+  <section class="section" id="how">
+    <div class="wrap">
+      <h2>Four steps</h2>
+      <p class="lead">From the pin on the map to the photograph of the finished work.</p>
+      <div class="steps">
+        <div>
+          <h3>Mark it</h3>
+          <p class="meta" style="margin:0">Pick the department, describe the problem and click the spot on the ward map.</p>
+        </div>
+        <div>
+          <h3>It is assigned</h3>
+          <p class="meta" style="margin:0">The cell sends it to an officer of that department and the status changes.</p>
+        </div>
+        <div>
+          <h3>Work is done</h3>
+          <p class="meta" style="margin:0">The officer records what was done and attaches proof before it can be marked resolved.</p>
+        </div>
+        <div>
+          <h3>You close it</h3>
+          <p class="meta" style="margin:0">Satisfied, you close it and rate the work. Not satisfied, you reopen it.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section alt" id="notices">
+    <div class="wrap">
+      <h2>Notices</h2>
+      <p class="lead">Planned work and anything that affects a whole ward.</p>
+      <div class="grid c2" id="notice-list"></div>
+    </div>
+  </section>
+
+  <section class="section" id="about">
+    <div class="wrap split">
+      <div>
+        <h2>About the portal</h2>
+        <p class="lead" style="margin-bottom:1rem">ComplainEase is the grievance portal for the corporation. A resident registers, files a complaint against one of the published departments and marks its location. The cell assigns it to an officer in that department. The officer records the action taken and attaches proof of work, and only then can the complaint be marked resolved. The resident closes it or sends it back. Nothing is deleted on the way, so the whole history sits against the reference number.</p>
+        <p class="meta">An officer can register here, but the account does nothing until the cell approves it and issues a staff number.</p>
+      </div>
+      <div class="tile" id="contact">
+        <h3>Grievance cell</h3>
+        <ul class="contact-list" id="office-box"></ul>
+      </div>
+    </div>
+  </section>
+
+  <footer class="site">
+    <div class="wrap">
+      <div class="foot-grid">
+        <div>
+          <span class="brand" style="margin-bottom:.6rem"><span class="dot">CE</span>ComplainEase</span>
+          <p class="muted" style="margin:.6rem 0 0;max-width:42ch">Civic complaints with a reference number, a location on the map, an officer against every job and proof of the work when it is finished.</p>
+        </div>
+        <div>
+          <h4>Quick links</h4>
+          <ul>
+            <li><a href="#departments">Departments</a></li>
+            <li><a href="#how">How it works</a></li>
+            <li><a href="#notices">Notices</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="pages/login.html">Sign in</a></li>
+            <li><a href="pages/register.html">Register</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4>Contact</h4>
+          <ul>
+            <li>Corporation Grievance Cell, Rippon Buildings, Chennai 600003</li>
+            <li>Helpline 1913</li>
+            <li>help@complainease.in</li>
+          </ul>
+        </div>
+      </div>
+      <div class="foot-bottom">
+        <span>&copy; 2026 ComplainEase. All rights reserved.</span>
+        <span>Privacy policy &middot; Terms of use</span>
+      </div>
+    </div>
+  </footer>
+  <script src="js/store.js"></script>
+  <script src="js/home.js"></script>
+</body>
+</html>

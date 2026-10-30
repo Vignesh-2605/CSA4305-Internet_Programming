@@ -1,0 +1,19 @@
+{
+  "name": "16-complaint-management",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Public complaint registration, ward map pin, officer action and proof of work",
+  "author": "Vignesh S",
+  "license": "UNLICENSED",
+  "scripts": {
+    "start": "node serve.js",
+    "serve": "node serve.js"
+  },
+  "keywords": [
+    "complaint",
+    "grievance",
+    "municipal",
+    "redressal",
+    "officer"
+  ]
+}
